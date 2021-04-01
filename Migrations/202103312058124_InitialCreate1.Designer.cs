@@ -7,13 +7,13 @@ namespace AfiliadosTest.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialCreate7 : IMigrationMetadata
+    public sealed partial class InitialCreate1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate7));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202103311605292_InitialCreate7"; }
+            get { return "202103312058124_InitialCreate1"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AfiliadosTest.Models.Afiliados>
+
+<div>
+    <h4>Afiliados al Plan</h4>
+    <hr />
+    <table class="table table-sm table-hover">
+        <tr class="text-center">
+            <th>
+                @Html.DisplayNameFor(model => model.Nombres) y @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoConsumido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estatus)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-left">
+                    @Html.DisplayFor(modelItem => item.Nombres) @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td class="text-right">
+                    @Html.DisplayFor(modelItem => item.MontoConsumido)
+                </td>
+                <td class="text-center">
+                    @if (!item.Sexo)
+                    {
+                        <div>Masculino</div>
+                    }
+                    else
+                    {
+                        <div>Femenino</div>
+                    }
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.Estatus.Estado)
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.AfiliadosEstatusEstado)*@
+                </td>
+            </tr>
+        }
+    </table>
+</div>

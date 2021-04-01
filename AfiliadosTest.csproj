@@ -137,37 +137,12 @@
     <Compile Include="Migrations\202103311459064_InitialCreate.Designer.cs">
       <DependentUpon>202103311459064_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103311516026_InitialCreate1.cs" />
-    <Compile Include="Migrations\202103311516026_InitialCreate1.Designer.cs">
-      <DependentUpon>202103311516026_InitialCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311525531_InitialCreate2.cs" />
-    <Compile Include="Migrations\202103311525531_InitialCreate2.Designer.cs">
-      <DependentUpon>202103311525531_InitialCreate2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311529208_InitialCreate3.cs" />
-    <Compile Include="Migrations\202103311529208_InitialCreate3.Designer.cs">
-      <DependentUpon>202103311529208_InitialCreate3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311545296_InitialCreate4.cs" />
-    <Compile Include="Migrations\202103311545296_InitialCreate4.Designer.cs">
-      <DependentUpon>202103311545296_InitialCreate4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311549107_InitialCreate5.cs" />
-    <Compile Include="Migrations\202103311549107_InitialCreate5.Designer.cs">
-      <DependentUpon>202103311549107_InitialCreate5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311601235_InitialCreate6.cs" />
-    <Compile Include="Migrations\202103311601235_InitialCreate6.Designer.cs">
-      <DependentUpon>202103311601235_InitialCreate6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103311605292_InitialCreate7.cs" />
-    <Compile Include="Migrations\202103311605292_InitialCreate7.Designer.cs">
-      <DependentUpon>202103311605292_InitialCreate7.cs</DependentUpon>
+    <Compile Include="Migrations\202103312058124_InitialCreate1.cs" />
+    <Compile Include="Migrations\202103312058124_InitialCreate1.Designer.cs">
+      <DependentUpon>202103312058124_InitialCreate1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Afiliados.cs" />
-    <Compile Include="Models\DetallePlanes.cs" />
     <Compile Include="Models\Estatus.cs" />
     <Compile Include="Models\Planes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -216,6 +191,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Planes\PlanesScript.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -326,6 +302,7 @@
     <Content Include="Views\Afiliados\Details.cshtml" />
     <Content Include="Views\Afiliados\Edit.cshtml" />
     <Content Include="Views\Afiliados\Index.cshtml" />
+    <Content Include="Views\PartialViews\DetallesPlanesPV.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,26 +324,8 @@
     <EmbeddedResource Include="Migrations\202103311459064_InitialCreate.resx">
       <DependentUpon>202103311459064_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311516026_InitialCreate1.resx">
-      <DependentUpon>202103311516026_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311525531_InitialCreate2.resx">
-      <DependentUpon>202103311525531_InitialCreate2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311529208_InitialCreate3.resx">
-      <DependentUpon>202103311529208_InitialCreate3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311545296_InitialCreate4.resx">
-      <DependentUpon>202103311545296_InitialCreate4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311549107_InitialCreate5.resx">
-      <DependentUpon>202103311549107_InitialCreate5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311601235_InitialCreate6.resx">
-      <DependentUpon>202103311601235_InitialCreate6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103311605292_InitialCreate7.resx">
-      <DependentUpon>202103311605292_InitialCreate7.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103312058124_InitialCreate1.resx">
+      <DependentUpon>202103312058124_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

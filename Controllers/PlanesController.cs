@@ -22,6 +22,12 @@ namespace AfiliadosTest.Controllers
             return View(planes.ToList());
         }
 
+        public ActionResult DetallesPlanesPV(int? id)
+        {
+            var afiliadosPlan = db.Afiliados.Where(s => s.PlanesID == id).ToList();
+            return PartialView("../PartialViews/DetallesPlanesPV", afiliadosPlan);
+        }
+
         // GET: Planes/Details/5
         public ActionResult Details(int? id)
         {
@@ -30,6 +36,7 @@ namespace AfiliadosTest.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Planes planes = db.Planes.Find(id);
+            
             if (planes == null)
             {
                 return HttpNotFound();
